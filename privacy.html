@@ -1,141 +1,331 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Privacy Policy for 3mi-agent - Learn how we protect your data and comply with Google API policies">
-<title>Privacy Policy | 3mi-agent</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#eef2f1;--ink:#16262c;--muted:#566a70;--accent:#0b7a75;--line:#c9d6d4;--panel:#fff}
-@media (prefers-color-scheme:dark){:root{--bg:#10191c;--ink:#e6efee;--muted:#9bb0b3;--accent:#4fd1c5;--line:#273a3f;--panel:#16262a}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.75 "Noto Sans TC",system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column}
-main{flex:1;width:100%;max-width:720px;margin:0 auto;padding:8vh 24px 48px}
-.breadcrumb{font-size:0.9rem;margin-bottom:32px}
-.breadcrumb a{color:var(--accent);text-decoration:none}
-.breadcrumb a:hover{text-decoration:underline}
-h1{font:700 clamp(2rem,6vw,2.8rem)/1.15 "Space Grotesk",sans-serif;letter-spacing:-.01em;margin:24px 0 16px}
-h2{font:700 1.25rem/1.4 "Space Grotesk",sans-serif;margin:40px 0 12px;color:var(--ink)}
-h3{font:600 1.05rem/1.4 "Space Grotesk",sans-serif;margin:24px 0 8px;color:var(--ink)}
-p{margin:0 0 12px}
-ul,ol{margin:0 0 16px;padding-left:1.2em}
-li{margin:6px 0}
-.highlight{background:rgba(11,122,117,0.12);padding:2px 6px;border-radius:3px;font-weight:500}
-footer{border-top:1px solid var(--line);padding:20px 24px;text-align:center;font-size:.9rem;color:var(--muted);margin-top:60px}
-a{color:var(--accent)}
-a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-.last-updated{font-size:0.85rem;color:var(--muted);margin-top:40px;padding-top:20px;border-top:1px solid var(--line)}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="3mi-agent 隱私權條款 - Google API 合規" />
+  <title>隱私權條款 | 3mi-agent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#eef2f1;
+      --ink:#16262c;
+      --muted:#566a70;
+      --accent:#0b7a75;
+      --line:#c9d6d4;
+      --panel:#ffffff;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#10191c;
+        --ink:#e6efee;
+        --muted:#9bb0b3;
+        --accent:#4fd1c5;
+        --line:#273a3f;
+        --panel:#16262a;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--ink);
+      font:400 17px/1.8 "Noto Sans TC", system-ui, sans-serif;
+      min-height:100vh;
+    }
+    a{ color:var(--accent); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    a:focus-visible{
+      outline:2px solid var(--accent);
+      outline-offset:3px;
+    }
+
+    .container{
+      width:min(760px, calc(100% - 32px));
+      margin:0 auto;
+    }
+
+    main{
+      padding:52px 0 48px;
+    }
+
+    .breadcrumb{
+      margin-bottom:24px;
+      font-size:0.92rem;
+    }
+
+    h1{
+      margin:0 0 14px;
+      font:700 clamp(2rem, 4vw, 3rem)/1.15 "Space Grotesk","Noto Sans TC",sans-serif;
+      letter-spacing:-0.03em;
+    }
+
+    h2{
+      margin:42px 0 10px;
+      font:700 1.3rem/1.4 "Space Grotesk","Noto Sans TC",sans-serif;
+    }
+
+    h3{
+      margin:24px 0 8px;
+      font:700 1.05rem/1.4 "Space Grotesk","Noto Sans TC",sans-serif;
+    }
+
+    p, li{
+      color:var(--ink);
+      line-height:1.9;
+    }
+
+    ul{
+      padding-left:1.3em;
+      margin:0 0 16px;
+    }
+
+    .note{
+      background:rgba(11,122,117,0.08);
+      border:1px solid rgba(11,122,117,0.12);
+      border-radius:12px;
+      padding:14px 16px;
+      margin:18px 0 26px;
+    }
+
+    .compliance-box{
+      background:var(--panel);
+      border-left:4px solid var(--accent);
+      border-radius:8px;
+      padding:16px;
+      margin:20px 0 26px;
+      font-size:0.95rem;
+      line-height:1.8;
+    }
+
+    .compliance-box h3{
+      margin-top:0;
+    }
+
+    code{
+      background:rgba(11,122,117,0.12);
+      padding:2px 6px;
+      border-radius:4px;
+      font-family:monospace;
+      font-size:0.9em;
+    }
+
+    footer{
+      border-top:1px solid var(--line);
+      padding:26px 0 40px;
+      color:var(--muted);
+      text-align:center;
+      font-size:0.92rem;
+    }
+
+    .last-updated{
+      font-size:0.85rem;
+      color:var(--muted);
+      margin-top:40px;
+      padding-top:20px;
+      border-top:1px solid var(--line);
+    }
+  </style>
 </head>
 <body>
-<main>
-  <div class="breadcrumb">
-    <a href="index.html">← 返回首頁</a>
-  </div>
+  <main class="container">
+    <div class="breadcrumb">
+      <a href="index.html">← 回到首頁</a>
+    </div>
 
-  <h1>隱私權條款</h1>
-  <p><strong>最後更新：2026年10月</strong></p>
+    <h1>隱私權條款（Privacy Policy）</h1>
+    <p><strong>最後更新日期 | Last Updated: 2026 年 10 月 1 日 | October 1, 2026</strong></p>
 
-  <p>本隱私權條款說明 <span class="highlight">3mi-agent</span>（以下簡稱「本應用程式」）如何收集、使用、處理和保護您的個人數據。我們致力於維護您的隱私和數據安全。</p>
+    <div class="note">
+      <p>
+        本隱私權條款說明 3mi-agent（以下簡稱「本應用程式」）如何收集、使用、處理與保護您的個人資料。<br/>
+        This Privacy Policy explains how 3mi-agent (the "Application") collects, uses, processes, and protects your personal data.
+      </p>
+    </div>
 
-  <h2>1. 我們收集的信息</h2>
-  <p>當你使用本應用程式並通過 Google OAuth 登入時，我們在獲得你的同意後，可能會收集以下信息：</p>
-  <ul>
-    <li><strong>基本 Google 帳戶信息</strong>：你的名稱、電子郵件地址和個人資料圖片</li>
-    <li><strong>Google Workspace 數據</strong>（根據你授權的範圍）：
+    <h2>1. 我們收集的資料 | Information We Collect</h2>
+    <p>
+      當您使用本應用程式並登入 Google 帳戶時，可能會依據授權範圍收集以下資料：<br/>
+      When you use the Application and sign in with your Google account, we may collect the following information based on the scopes you authorize:
+    </p>
+    <ul>
+      <li>
+        <strong>基本帳戶資訊 | Basic Account Information:</strong><br/>
+        您的姓名、電子郵件地址與個人資料圖片<br/>
+        Your name, email address, and profile picture
+      </li>
+      <li>
+        <strong>Gmail 郵件數據 | Gmail Message Data:</strong><br/>
+        郵件內容、發送人、收件人、主旨、附件資訊及郵件元數據<br/>
+        Email message contents, sender, recipient, subject, attachment information, and email metadata
+      </li>
+      <li>
+        <strong>Google Calendar 行事曆數據 | Google Calendar Data:</strong><br/>
+        行事曆事件、事件時間、參與者資訊、事件描述及行事曆設定<br/>
+        Calendar events, event times, participant information, event descriptions, and calendar settings
+      </li>
+      <li>
+        <strong>使用數據 | Usage Data:</strong><br/>
+        您與本應用程式的交互記錄、系統日誌與性能數據，幫助我們改進服務<br/>
+        Interaction logs, system logs, and performance data to help us improve the service
+      </li>
+      <li>
+        <strong>其他已授權的 Google 服務 | Other Authorized Google Services:</strong><br/>
+        根據您授權範圍內的其他 Google 服務數據<br/>
+        Other Google services data based on your authorized scopes
+      </li>
+    </ul>
+
+    <h2>2. 資料使用目的 | How We Use Your Information</h2>
+    <p>
+      我們收集資料的目的是為了向您提供和改進本應用程式的服務：<br/>
+      We collect information for the following purposes to provide and improve the Application's services:
+    </p>
+    <ul>
+      <li>建立與維護您的帳戶與身份驗證 | To create and maintain your account and authentication</li>
+      <li>提供 AI 助手相關功能，例如郵件整理、行事曆管理和任務協助 | To provide AI assistant features such as email organization, calendar management, and task assistance</li>
+      <li>根據您的授權執行特定任務和自動化流程 | To execute specific tasks and automation workflows according to your authorization</li>
+      <li>改進我們的 AI 模型和用戶體驗 | To improve our AI models and user experience</li>
+      <li>提供客戶支持和技術協助 | To provide customer support and technical assistance</li>
+      <li><strong>除非法律要求，我們絕不會將您的數據出售、分享或披露給第三方 | We will never sell, share, or disclose your data to third parties unless required by law</strong></li>
+    </ul>
+
+    <h2>3. Google API 服務用戶數據政策合規 | Google API Services User Data Policy Compliance</h2>
+    <p>
+      本應用程式的 Google API 資料使用，將遵守 
+      <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">
+        Google API Services User Data Policy
+      </a>
+      相關規定，包括所有有限使用要求。<br/>
+      The Application's use of Google API data complies with the 
+      <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">
+        Google API Services User Data Policy
+      </a>, including all Limited Use requirements.
+    </p>
+
+    <div class="compliance-box">
+      <h3>📋 有限使用聲明 | Limited Use Disclosure</h3>
+      <p>
+        <strong>中文 | Chinese:</strong><br/>
+        3mi-agent 從 Google API 接收的用戶數據，僅用於向用戶提供本應用程式明確聲明的功能和服務。我們不會將此數據用於：
+      </p>
       <ul>
-        <li>Gmail 郵件內容和元數據</li>
-        <li>Google Calendar 行事曆事件和細節</li>
-        <li>其他已授權的 Google 服務數據</li>
+        <li>個性化廣告或行為廣告目的</li>
+        <li>銷售、出租、租賃或交易用戶個人信息</li>
+        <li>改進、維護或優化任何廣告相關服務</li>
+        <li>任何未經用戶明確同意的商業目的</li>
       </ul>
-    </li>
-    <li><strong>使用數據</strong>：你與本應用程式的交互記錄，幫助我們改進服務</li>
-  </ul>
+      <p>
+        <strong>English | 英文:</strong><br/>
+        User data received from Google APIs by 3mi-agent is used solely to provide the functionality and services as explicitly stated in the Application. We will NOT use this data for:
+      </p>
+      <ul>
+        <li>Personalized advertising or behavioral advertising purposes</li>
+        <li>Selling, renting, leasing, or trading user personal information</li>
+        <li>Improving, maintaining, or optimizing any advertising-related services</li>
+        <li>Any commercial purposes without explicit user consent</li>
+      </ul>
+    </div>
 
-  <h2>2. 我們如何使用你的信息</h2>
-  <p>我們收集上述信息的目的是為了向你提供和改進本應用程式的服務：</p>
-  <ul>
-    <li>驗證你的身份並創建你的帳戶</li>
-    <li>提供 AI 助手相關的核心功能（如郵件管理、行事曆同步等）</li>
-    <li>根據你的授權執行特定任務和自動化流程</li>
-    <li>改進我們的 AI 模型和用戶體驗</li>
-    <li>提供客戶支持和技術協助</li>
-    <li><strong>除非法律要求，我們絕不會將你的數據出售、分享或披露給第三方</strong></li>
-  </ul>
+    <h2>4. Gmail 與行事曆資料說明 | Gmail and Calendar Data Usage</h2>
+    <p>
+      <strong>Gmail 郵件使用 | Gmail Message Usage:</strong><br/>
+      我們僅在您明確授權且為了協助您管理郵件（如自動分類、摘要提取、智能回覆建議）時才存取您的 Gmail 資料。所有郵件內容在服務器上進行處理，並遵循最高安全標準進行加密存儲。<br/>
+      We access your Gmail data only with your explicit authorization and for assisting you with email management (such as automatic categorization, summary extraction, and smart reply suggestions). All email contents are processed on secure servers and encrypted in storage according to the highest security standards.
+    </p>
+    <p>
+      <strong>Google Calendar 行事曆使用 | Google Calendar Usage:</strong><br/>
+      我們僅在您明確授權且為了協助您管理日程（如事件提醒、時間協調、日程優化）時才存取您的行事曆資料。行事曆事件資訊同樣遵循安全加密標準進行處理。<br/>
+      We access your calendar data only with your explicit authorization and for assisting you with schedule management (such as event reminders, time coordination, and schedule optimization). Calendar event information is processed according to the same security and encryption standards.
+    </p>
 
-  <h2>3. Google API 服務用戶數據政策</h2>
-  <p>本應用程式從 Google API 接收的信息的使用和轉移應遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API 服務用戶數據政策</a>，包括所有限制使用要求（Limited Use Restrictions）。</p>
-  <p><strong>我們確保：</strong></p>
-  <ul>
-    <li>只在提供本應用程式功能的必要範圍內使用 Google 數據</li>
-    <li>不會將 Google 數據用於個性化廣告或其他商業目的</li>
-    <li>不會將 Google 數據轉移給未經授權的第三方</li>
-    <li>對所有收集的 Google 數據實施安全保護措施</li>
-  </ul>
+    <h2>5. 資料保護措施 | Data Security Measures</h2>
+    <p>我們採用合理且必要的安全措施來保護資料：</p>
+    <ul>
+      <li>使用 HTTPS 傳輸與安全通訊保護 | HTTPS transmission and secure communication protocols</li>
+      <li>限制存取權限與帳號驗證機制 | Restricted access permissions and account authentication</li>
+      <li>透過系統保護和存取控制防止未授權使用 | System protection and access controls to prevent unauthorized use</li>
+      <li>對必要資料進行安全管理與定期檢查 | Secure management and regular audits of data</li>
+      <li>員工訓練和隱私合規政策 | Employee training and privacy compliance policies</li>
+    </ul>
 
-  <h2>4. 數據安全和保護</h2>
-  <p>我們採用業界標準的安全措施保護你的數據：</p>
-  <ul>
-    <li>所有通訊都通過加密的 HTTPS 連接進行</li>
-    <li>數據存儲在安全的服務器上，採用加密存儲</li>
-    <li>訪問控制和身份驗證機制限制對敏感數據的訪問</li>
-    <li>定期進行安全審計和漏洞掃描</li>
-  </ul>
+    <h2>6. 資料保存與刪除 | Data Retention and Deletion</h2>
+    <p>我們會依服務需要保存必要資料，並在以下情況下處理刪除：</p>
+    <ul>
+      <li>您主動請求撤銷授權時 | When you request to revoke authorization</li>
+      <li>您請求刪除帳戶或個人資料時 | When you request account or data deletion</li>
+      <li>資料已不再需要提供服務時 | When data is no longer necessary for service provision</li>
+    </ul>
+    <p>
+      根據您的請求，我們會在 30 天內完全刪除所有相關個人數據。<br/>
+      Upon your request, we will permanently delete all related personal data within 30 days.
+    </p>
 
-  <h2>5. 數據保留和刪除</h2>
-  <p>我們遵循以下數據保留政策：</p>
-  <ul>
-    <li><strong>主動數據</strong>：只要你的帳戶保持活躍，我們會保留必要的數據以維持服務</li>
-    <li><strong>帳戶刪除</strong>：刪除帳戶後，我們將在30天內刪除所有關聯的個人數據</li>
-    <li><strong>日誌數據</strong>：系統日誌通常在90天後自動刪除</li>
-  </ul>
+    <h2>7. 您的權利 | Your Rights</h2>
+    <p>您有權依照適用法規行使以下權利：</p>
+    <ul>
+      <li><strong>存取權 | Right of Access:</strong> 查閱與取得您個人資料的副本</li>
+      <li><strong>更正權 | Right of Rectification:</strong> 更正錯誤或不完整的資料</li>
+      <li><strong>刪除權 | Right of Erasure:</strong> 撤回授權並停止資料處理，並要求刪除您的個人資料</li>
+      <li><strong>可攜性權 | Right of Data Portability:</strong> 以常見格式獲取您的資料副本</li>
+    </ul>
 
-  <h2>6. 你的權利</h2>
-  <p>你有權對自己的數據進行以下操作：</p>
-  <ul>
-    <li><strong>存取權</strong>：要求查看我們持有的關於你的所有數據</li>
-    <li><strong>更正權</strong>：要求更正任何不準確的個人信息</li>
-    <li><strong>刪除權</strong>：要求刪除你的個人數據（「被遺忘權」）</li>
-    <li><strong>撤銷授權</strong>：隨時撤銷本應用程式對你 Google 帳戶的訪問權限</li>
-    <li><strong>數據可攜性</strong>：以常見格式獲取你的數據副本</li>
-  </ul>
+    <h2>8. 聯繫方式 | Contact Us</h2>
+    <p>
+      若您對本隱私權條款有任何疑問、需要撤回授權或請求資料刪除，請聯絡：<br/>
+      If you have any questions about this Privacy Policy, need to revoke authorization, or request data deletion, please contact us at:
+    </p>
+    <ul>
+      <li>
+        <strong>電子郵件 | Email:</strong> 
+        <a href="mailto:sammy.ms3@gmail.com">sammy.ms3@gmail.com</a>
+      </li>
+      <li>
+        <strong>GitHub Issues | 問題報告:</strong> 
+        <a href="https://github.com/sammy-ms3/3mi-verification/issues" target="_blank" rel="noopener">
+          提交問題或反饋 | Submit Issues or Feedback
+        </a>
+      </li>
+    </ul>
 
-  <h2>7. 聯繫我們</h2>
-  <p>如果你對本隱私權條款有任何疑問，或者想要：</p>
-  <ul>
-    <li>撤銷本應用程式的授權</li>
-    <li>請求刪除你的個人數據</li>
-    <li>提出隱私相關的投訴或顧慮</li>
-  </ul>
-  <p>請通過以下方式聯繫我們：</p>
-  <ul>
-    <li><strong>電子郵件</strong>：<a href="mailto:sammy.ms3@gmail.com">sammy.ms3@gmail.com</a></li>
-    <li><strong>支持中心</strong>：<a href="https://github.com/sammy-ms3/3mi-verification/issues">提交問題或反饋</a></li>
-  </ul>
+    <h2>9. 條款更新 | Policy Updates</h2>
+    <p>
+      本隱私權條款可能會因服務或法規調整而更新。重大變更時，我們會在網站或相關渠道公告，並在必要時通知使用者。<br/>
+      This Privacy Policy may be updated to reflect changes in our services or applicable laws. We will announce major changes on our website and notify users when necessary.
+    </p>
 
-  <h2>8. 政策變更</h2>
-  <p>我們可能會不時更新本隱私權條款以反映法律或服務的變化。任何重大變更都會通過電子郵件通知你，並在應用程式中公佈。持續使用本應用程式表示你接受修改後的條款。</p>
+    <h2>10. 遵守法律 | Legal Compliance</h2>
+    <p>
+      本應用程式遵守所有適用的隱私法律和法規，包括但不限於：<br/>
+      The Application complies with all applicable privacy laws and regulations, including but not limited to:
+    </p>
+    <ul>
+      <li>GDPR（歐盟通用數據保護條例）| EU General Data Protection Regulation (GDPR)</li>
+      <li>CCPA（加州消費者隱私法）| California Consumer Privacy Act (CCPA)</li>
+      <li>台灣個人資料保護法 | Taiwan Personal Data Protection Act</li>
+      <li>其他相關司法管轄區的隱私法 | Privacy laws in other relevant jurisdictions</li>
+    </ul>
 
-  <h2>9. 遵守法律</h2>
-  <p>本應用程式遵守所有適用的隱私法律和法規，包括但不限於：</p>
-  <ul>
-    <li>GDPR（歐盟通用數據保護條例）</li>
-    <li>CCPA（加州消費者隱私法）</li>
-    <li>台灣個人資料保護法</li>
-    <li>其他相關司法管轄區的隱私法</li>
-  </ul>
+    <div class="last-updated">
+      <p>
+        <strong>最後更新日期 | Last Updated: 2026 年 10 月 1 日 | October 1, 2026</strong>
+      </p>
+      <p>
+        若對此隱私權條款有任何疑問，請隨時與我們聯繫。<br/>
+        If you have any questions about this Privacy Policy, please contact us at any time.
+      </p>
+    </div>
+  </main>
 
-  <div class="last-updated">
-    <p><strong>最後更新日期</strong>：2026年10月1日</p>
-    <p>若對此隱私權條款有任何疑問，請隨時與我們聯繫。</p>
-  </div>
-</main>
-
-<footer>
-  <p>© 2026 3mi-agent. 保留所有權利。</p>
-  <p><a href="index.html">返回首頁</a></p>
-</footer>
+  <footer>
+    <p>© 2026 3mi-agent. 保留所有權利。| All Rights Reserved.</p>
+    <p>
+      <a href="index.html">返回首頁 | Back to Home</a> · 
+      <a href="mailto:sammy.ms3@gmail.com">聯絡我們 | Contact Us</a>
+    </p>
+  </footer>
 </body>
 </html>
