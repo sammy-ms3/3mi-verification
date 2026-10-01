@@ -59,6 +59,29 @@
       align-items:center;
       gap:16px;
     }
+    .brand-section{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .brand-logo{
+      width:50px;
+      height:50px;
+      flex-shrink:0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .brand-logo img{
+      width:100%;
+      height:100%;
+      object-fit:contain;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float{
+      0%, 100%{ transform: translateY(0px); }
+      50%{ transform: translateY(-8px); }
+    }
     .brand{
       font-family:"Space Grotesk","Noto Sans TC",sans-serif;
       font-weight:700;
@@ -256,13 +279,73 @@
       .hero-inner{ grid-template-columns:1fr; }
       .features{ grid-template-columns:1fr; }
       .nav{ flex-direction:column; align-items:flex-start; }
+      .brand-section{ gap: 8px; }
+      .brand-logo{ width: 40px; height: 40px; }
+      .brand{ font-size: 1.4rem; }
     }
   </style>
 </head>
 <body>
   <header>
     <div class="container nav">
-      <div class="brand"><span>3mi</span>-agent</div>
+      <div class="brand-section">
+        <div class="brand-logo">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <!-- Robot body (glowing green) -->
+            <defs>
+              <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#4fd1c5;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#0b7a75;stop-opacity:1" />
+              </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                <feMerge>
+                  <feMergeNode in="coloredBlur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+            </defs>
+            
+            <!-- Head -->
+            <rect x="50" y="30" width="100" height="90" rx="15" fill="url(#bodyGrad)" filter="url(#glow)"/>
+            
+            <!-- Left eye -->
+            <circle cx="75" cy="60" r="18" fill="#fff" opacity="0.9"/>
+            <circle cx="75" cy="60" r="14" fill="#0b7a75"/>
+            <circle cx="77" cy="58" r="7" fill="#4fd1c5" opacity="0.8"/>
+            
+            <!-- Right eye -->
+            <circle cx="125" cy="60" r="18" fill="#fff" opacity="0.9"/>
+            <circle cx="125" cy="60" r="14" fill="#0b7a75"/>
+            <circle cx="127" cy="58" r="7" fill="#4fd1c5" opacity="0.8"/>
+            
+            <!-- Mouth -->
+            <path d="M 80 85 Q 100 95 120 85" stroke="#0b7a75" stroke-width="2" fill="none" stroke-linecap="round"/>
+            
+            <!-- 3mi text on chest -->
+            <text x="100" y="140" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff" opacity="0.85">3mi</text>
+            
+            <!-- Left arm -->
+            <g>
+              <rect x="20" y="100" width="30" height="18" rx="9" fill="url(#bodyGrad)" filter="url(#glow)"/>
+              <circle cx="25" cy="109" r="8" fill="#4fd1c5" opacity="0.6"/>
+            </g>
+            
+            <!-- Right arm -->
+            <g>
+              <rect x="150" y="100" width="30" height="18" rx="9" fill="url(#bodyGrad)" filter="url(#glow)"/>
+              <circle cx="175" cy="109" r="8" fill="#4fd1c5" opacity="0.6"/>
+            </g>
+            
+            <!-- Left foot -->
+            <ellipse cx="70" cy="155" rx="12" ry="18" fill="#0b7a75" opacity="0.7"/>
+            
+            <!-- Right foot -->
+            <ellipse cx="130" cy="155" rx="12" ry="18" fill="#0b7a75" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="brand"><span>3mi</span>-agent</div>
+      </div>
       <nav class="nav-links" aria-label="Main navigation">
         <a href="#features">功能</a>
         <a href="#vision">願景</a>
